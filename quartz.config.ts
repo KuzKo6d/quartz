@@ -22,33 +22,54 @@ const config: QuartzConfig = {
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
+
       typography: {
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
+
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          // Gruvbox light
+          light: "#fbf1c7",
+          lightgray: "#ebdbb2",
+          gray: "#a89984",
+          darkgray: "#504945",
+          dark: "#282828",
+
+          // Gruvbox neutral blue
+          secondary: "#458588",
+
+          // Gruvbox aqua
+          tertiary: "#689d6a",
+
+          // subtle Gruvbox background
+          highlight: "rgba(215, 153, 33, 0.15)",
+
+          // yellow highlight
+          textHighlight: "#fabd2f88",
         },
+
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          // Gruvbox dark
+          light: "#282828",
+          lightgray: "#3c3836",
+          gray: "#928374",
+          darkgray: "#d5c4a1",
+          dark: "#fbf1c7",
+
+          // Gruvbox orange/red accent
+          secondary: "#d65d0e",
+
+          // Gruvbox aqua
+          tertiary: "#8ec07c",
+
+          // subtle yellow highlight
+          highlight: "rgba(215, 153, 33, 0.12)",
+
+          // yellow highlight
+          textHighlight: "#fabd2f88",
         },
       },
     },
@@ -61,8 +82,8 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "one-light",
+          dark: "one-dark-pro",
         },
         keepBackground: false,
       }),
